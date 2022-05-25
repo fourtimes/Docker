@@ -4,5 +4,4 @@
 
 
 **vsftpd localmachine connection:**
-![image](https://user-images.githubusercontent.com/91359308/170261166-f4fdd71b-490d-4028-bc07-b2f0b51f460e.png)
-
+![image](https://user-images.githubusercontent.com/91359308/170261284-10967855-40ca-4861-a18e-2156d8da2831.png)
