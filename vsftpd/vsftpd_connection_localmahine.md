@@ -57,6 +57,7 @@ chroot_list_file=/etc/vsftpd.chroot_list
 
 #  start the vsftpd service
 sudo systemctl start vsftpd
+
 #  status of vsftpd service
 sudo systemctl status vsftpd
 ```
