@@ -18,4 +18,5 @@ COPY vsftpd.conf /etc/vsftpd.conf
 
 RUN ln -sf /dev/stdout /var/log/nginx/fourtimes.ml.access.log \ 
         && ln -sf /dev/stderr /var/log/nginx/fourtimes.ml.error.log
+        
 CMD ["/usr/sbin/vsftpd","/etc/vsftpd.conf"]
