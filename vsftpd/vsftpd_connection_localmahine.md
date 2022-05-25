@@ -12,10 +12,13 @@ echo "ashli:password" | sudo chpasswd
 
 # Create a directory
 sudo mkdir -p /etc/vsftpd/users /var/www/html/fourtimes.ml /var/run/vsftpd/empty
+
 # give the owner permission of new user
 sudo chown -R ashli:ashli /var/www/html/fourtimes.ml
+
 # give the local root
 echo "local_root=/var/www/html/fourtimes.ml" | sudo tee -a /etc/vsftpd/users/ashli
+
 # give the change root
 echo "ashli" | sudo tee /etc/vsftpd.chroot_list
 
