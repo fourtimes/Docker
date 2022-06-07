@@ -36,6 +36,10 @@ echo \
 ```bash
 sudo systemctl start docker
 ```
+**Check the status**
+```bash
+sudo systemctl status docker
+```
 
 **Stop the Docker**
 
