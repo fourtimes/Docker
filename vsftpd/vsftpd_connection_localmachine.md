@@ -11,7 +11,7 @@ sudo useradd -m -s /bin/bash ashli
 echo "ashli:password" | sudo chpasswd
 
 # Create a directory
-sudo mkdir -p /etc/vsftpd/users /var/www/html/fourtimes.ml /var/run/vsftpd/empty
+sudo mkdir -p /etc/vsftpd/users /var/www/html/fourtimes.ml
 
 # give the owner permission of new user
 sudo chown -R ashli:ashli /var/www/html/fourtimes.ml
