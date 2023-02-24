@@ -19,6 +19,9 @@ sudo docker rmi $(docker images -a -q)
 **Run a image, to create a container**
 ```bash
 sudo docker run -d -it (image_id) bash
+        [or]
+sudo docker create (image_name)
+sudo docker start (created_con_id)
 ```
 **Enter into the specified container**
 ```bash
