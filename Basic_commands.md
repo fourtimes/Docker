@@ -18,6 +18,9 @@ docker rmi (image_id)
 # Remove all the images
 docker rmi $(docker images -a -q)
 
+# create a container with port forwarding
+docker run -d -p 80:80 --name (conatiner-name) (image-name)
+
 # Run a image, to create a container
 docker run -d -it (image_id) bash
         [or]
