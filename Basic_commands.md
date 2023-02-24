@@ -54,8 +54,13 @@ docker inspect (image_id)
 docker push (image_id)
 
 # redis server in docker
-docker run redis
-docker exec -it redis redis-cli
+docker run (redis-img-name)
+docker exec -it (redis-img-name) redis-cli
+
+# to create image from docker container
+docker commit -c (CMD command depends on the docker image) (container-id)
+
+ex: docker commit -c 'CMD ["redis-server"]' 05e2e08b48df
 
 ```
 
