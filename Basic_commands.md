@@ -66,6 +66,17 @@ docker commit -c (CMD command depends on the docker image) (container-id)
 ex: docker commit -c 'CMD ["redis-server"]' 05e2e08b48df
 
 ```
+# docker compose 
+```bash
+# create the docker image using docker compose
+docker compose up
+
+# up the container in background
+docker compose up -d
+
+# stop the running containers
+docker compose down
+```
 
 # Backup and Restore
 ```bash
