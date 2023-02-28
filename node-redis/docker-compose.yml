@@ -6,3 +6,6 @@ services:
     build: .
     ports:
       - "4001:8081"
+
+# after the docker compose yaml file creation, we can use the below command in terminal
+#  docker compose up
