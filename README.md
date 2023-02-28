@@ -7,3 +7,6 @@
 you can significantly reduce the delay between writing code and running it in production.
 ```
 ![image](https://user-images.githubusercontent.com/91359308/174522685-fda943ac-7786-4c55-bd5e-9bbed27fba45.png)
+
+# What is docker compose?
+Compose is a tool for defining and running **multi-container** Docker applications. With Compose, you use a YAML file to configure your application’s services.
