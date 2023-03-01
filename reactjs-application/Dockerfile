@@ -9,9 +9,9 @@ FROM nginx
 COPY --from=builder /app/build /usr/share/nginx/html
 
 
+
 # docker build -t (image-name) .
 #  docker run -d -p 8080:80 --name (con-name) (imag-name)
-
 
 # go to the browser and use the below command,
 # localhost:8080
