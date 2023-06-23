@@ -65,6 +65,11 @@ docker commit -c (CMD command depends on the docker image) (container-id)
 
 ex: docker commit -c 'CMD ["redis-server"]' 05e2e08b48df
 
+# Delete all containers using the following command:
+docker rm -f $(docker ps -a -q)
+
+# Delete all volumes using the following command:
+docker volume rm $(docker volume ls -q)
 ```
 ## Docker compose
 
@@ -72,10 +77,10 @@ ex: docker commit -c 'CMD ["redis-server"]' 05e2e08b48df
 # build the docker compose file
 docker compose up  --build
 
-# start the docker compose file using daemon mode
+# Restart the containers using the following command:
 docker compose up -d
 
-# down container
+# Stop the container(s) using the following command:
 docker compose down 
 ```
 # Backup and Restore
