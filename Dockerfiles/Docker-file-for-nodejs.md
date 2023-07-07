@@ -33,16 +33,19 @@ Output:
 
 **_Dockerfile_**
 ```docker
+```docker
 # Non-Root User by Dockerfile
 
 FROM node:14
+RUN groupadd -r user && useradd -r -g user ashliuser
 WORKDIR /application
 COPY package*.json ./
 RUN npm install
 COPY . .
 EXPOSE 3000
-USER node
+USER user
 CMD [ "node", "index.js" ]
+```
 ```
 When we try implement this dockerfile using this command.
 ```sh
@@ -50,7 +53,7 @@ When we try implement this dockerfile using this command.
 docker build -t (imageName) .
 
 # create a docker container
-docker run -it -d -p 3000:3000 --name (containerName) (imageName)
+docker run -it -d -p 3000:3000 --user ashliuser --name (containerName) (imageName)
 
 # login to the docker container
 docker exec -it (created containerName) (imageName)
